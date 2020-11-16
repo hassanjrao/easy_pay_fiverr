@@ -1,0 +1,506 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="images/logo.png " rel="icon" />
+  <title>Easy Pay</title>
+  <meta name="description" content="This professional design html template is for build a Money Transfer and online payments website.">
+  <meta name="author" content="inam ul haq">
+
+  <!-- Web Fonts
+  ============================================= -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"><!-- Stylesheet
+============================================= -->
+
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+  <style>
+
+    #msform fieldset:not(:first-of-type) {
+      display: none
+    }
+
+
+    .cardd {
+      z-index: 0;
+      position: relative
+    }
+
+    #progressbar {
+      margin-bottom: 30px;
+      overflow: hidden;
+      color: lightgrey;
+      display: inline-flex;
+      width: 60%;
+    }
+
+
+    #progressbar .active {
+      color: #000000
+    }
+
+    #progressbar li {
+      list-style-type: none;
+      font-size: 12px;
+        width: 33.3%;
+      float: left;
+      position: relative
+    }
+
+    #progressbar #account:before {
+
+      content: "";
+      background: url("images/icon.png");
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 27px;
+    }
+
+
+    #progressbar #personal:before {
+      content: "";
+      background: url("images/circle.png");
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 27px;
+    }
+
+    #progressbar #personal.active:before {
+      content: "";
+      background: url("images/icon.png");
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 27px;
+    }
+    #progressbar #payment:before {
+      content: "";
+      background: url("images/circle.png");
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 27px;
+    }
+    #progressbar #payment.active:before {
+      content: "";
+      background: url("images/icon.png");
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 27px;
+    }
+
+    #progressbar #confirm:before {
+      font-family: FontAwesome;
+      content: "\f00c"
+    }
+
+    #progressbar li:before {
+      width: 50px;
+      height: 50px;
+      line-height: 45px;
+      display: block;
+      font-size: 18px;
+      color: #ffffff;
+      background: lightgray;
+      border-radius: 50%;
+      margin: 0 auto 10px auto;
+      padding: 2px
+    }
+
+    #progressbar li:after {
+      content: '';
+      border-top:2px dashed black;
+      width: 99%;
+      position: absolute;
+      left: 110px;
+      top: 12px;
+      z-index: -1;
+    }
+    #progressbar  li:last-child:after {
+      content: '';
+      border-top:2px dashed black;
+      width: 9%;
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      z-index: -1;
+    }
+    #progressbar li:after :not(last-of-type){
+      content: '';
+      border-top:2px dashed black;
+      width: 0%;
+      position: absolute;
+      left: 110px;
+      top: 12px;
+      z-index: -1;
+    }
+
+    #progressbar li.active strong
+     {
+
+      color: black;
+    }
+    #progressbar li.active strong:before,
+    #progressbar li.active strong:after {
+      background: skyblue;
+      color: black;
+    }
+
+    .radio-group {
+      position: relative;
+      margin-bottom: 25px
+    }
+
+    .radio {
+      display: inline-block;
+      width: 204;
+      height: 104;
+      border-radius: 0;
+      background: lightblue;
+      box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      cursor: pointer;
+      margin: 8px 2px
+    }
+
+    .radio:hover {
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+    }
+
+    .radio.selected {
+      box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+    }
+
+    .fit-image {
+      width: 100%;
+      object-fit: cover
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Preloader -->
+<div id="preloader">
+  <div data-loader="dual-ring"></div>
+</div>
+<!-- Preloader End -->
+
+<!-- Document Wrapper
+============================================= -->
+<div id="main-wrapper">
+
+  <!-- Header
+  ============================================= -->
+  <header id="header">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-column justify-content-start">
+          <!-- Logo
+          ============================= -->
+          <div class="logo"> <a class="d-flex" href="index.html" title="Easy Pay"><img src="images/logo.png" alt="Easy Pay" /></a> </div>
+
+
+
+        </div>
+        <div class="header-column justify-content-end">
+
+          <nav class="login-signup navbar navbar-expand">
+            <ul class="navbar-nav">
+              <li><a href="signup.html">Register</a> </li>
+              <li class="align-items-center h-auto ml-sm-3"><a class="btn btn-primary shadow-none  " href="login.html">Log In</a></li>
+            </ul>
+
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+ 
+  <div id="content" class="py-4">
+   
+    <div class="container">
+      <div class="row text-center mt-0 cardd">
+        <div class="col-12  text-center p-0 mt-3 mb-2">
+          <div class=" px-0 pt-4 pb-0 mt-3 mb-3">
+            <div class="row">
+              <div class="col-md-12 mx-0">
+                <form id="msform">
+                  <!-- progressbar -->
+                  <ul id="progressbar">
+                    <li class="active" id="account"><strong>Link mailbox</strong></li>
+                    <li id="personal"><strong>Service providers</strong></li>
+                    <li id="payment"><strong>Payment Method</strong></li>
+
+                  </ul>
+                  <fieldset>
+                    <div class="col-md-9 col-lg-9 col-xl-9 mx-auto ">
+                      <p class="text-center bills">Please link your mailbox to your account
+                      </p>
+                      <!-- Send Money Success
+                      ============================================= -->
+                      <div class="bg-light  pb-5 mb-4 pt-5">
+                        <div class="row profile-completeness">
+                          <div class="col-sm-6 col-md-3 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class=" text-center mail">
+                              <img src="images/14%20(5).png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-3 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class=" text-center mail">
+                              <img src="images/14%20(3).png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-3 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class=" text-center mail">
+                              <img src="images/14%20(2).png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-3 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class=" text-center mail">
+                              <img src="images/14%20(4).png" alt="">
+                            </div>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <input type="button" name="next" class="next action-button btn btn-primary float-right mr-7" value="Confirm" />
+
+                  </fieldset>
+                  <fieldset>
+                    <div class="col-md-9 col-lg-9 col-xl-9 mx-auto ">
+                      <p class="text-center bills">Please choose service providers you want to autopay
+                      </p>
+                      <!-- Send Money Success
+                      ============================================= -->
+                      <div class="bg-light shadow-sm rounded p-4 mb-4 pt-5">
+                        <div class="row profile-completeness">
+                          <div class="col-sm-6 col-md-4 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class="border rounded p-3 text-center">
+                              <img src="images/partner/partner-1.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class="border rounded p-3 text-center">
+                              <img src="images/partner/partner-1.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class="border rounded p-3 text-center">
+                              <img src="images/partner/partner-1.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class="border rounded p-3 text-center">
+                              <img src="images/partner/partner-1.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class="border rounded p-3 text-center">
+                              <img src="images/partner/partner-1.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 mb-4 mb-md-0 mt-1 mb-1">
+                            <div class="border rounded p-3 text-center">
+                              <img src="images/partner/partner-1.png" alt="">
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <input type="button" name="next" class="next action-button btn btn-primary float-right mr-7 " value="Confirm" />
+
+                  </fieldset>
+
+                  <fieldset>
+                    <div class="col-md-9 col-lg-9 col-xl-9 mx-auto ">
+                      <p class="text-center bills">Please add your payment method to pay bills
+                      </p>
+                      <!-- Send Money Success
+                      ============================================= -->
+                      <div class="bg-light shadow-sm rounded p-50  mb-4 ">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="text-center">
+                              <img src="images/pay.png" alt="">
+                            </div>
+                          </div>
+
+                        </div>
+
+                          <div class="form-group text-left">
+                            <label for="editcardHolderName">Card Holder Name</label>
+                            <input type="text" class="form-control" data-bv-field="editcardHolderName" id="editcardHolderName" required  placeholder="Card Holder Name">
+                          </div>
+
+                          <div class="form-row">
+                            <div class="col-lg-6">
+                              <div class="form-group text-left">
+                                <label for="editexpiryDate">Expiry Date</label>
+                                <input id="editexpiryDate" type="text" class="form-control" data-bv-field="editexpiryDate" required value="07/24" placeholder="MM/YY">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group text-left">
+                                <label for="editcvvNumber">CVV <span class="text-info ml-1" data-toggle="tooltip" data-original-title="For Visa/Mastercard, the three-digit CVV number is printed on the signature panel on the back of the card immediately after the card's account number. For American Express, the four-digit CVV number is printed on the front of the card above the card account number."><i class="fas fa-question-circle"></i></span></label>
+                                <input id="editcvvNumber" type="password" class="form-control" data-bv-field="editcvvNumber" required value="321" placeholder="CVV (3 digits)">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group text-left">
+                            <label for="edircardNumber">Card Number</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control" data-bv-field="edircardNumber" id="edircardNumber" disabled value="XXXXXXXXXXXX4151" placeholder="Card Number">
+                            </div>
+                          </div>
+
+
+
+                      </div>
+                    </div>
+
+<!--                    <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
+                    <input type="button" name="next" class="next action-button btn btn-primary float-right mr-7 " value="Confirm" />
+                  </fieldset>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6 col-md mb-3 mb-md-0">
+          <h4 class="text-3 text-muted text-uppercase font-weight-400 mb-3"><img src="images/footer_logo.png" alt=""></h4>
+          <p class="pt-2 text-2">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do.</p>
+        </div>
+        <div class="col-sm-6 col-md mb-3 mb-md-0">
+          <ul class="nav flex-column">
+            <li class="nav-item"> <a class="nav-link text-white " href="#">About Us</a></li>
+            <li class="nav-item"> <a class="nav-link text-white" href="#">Our partners</a></li>
+            <li class="nav-item"> <a class="nav-link text-white" href="#">Contact Us
+            </a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md mb-3 mb-md-0">
+          <ul class="nav flex-column">
+            <li class="nav-item"> <a class="nav-link text-white" href="#">Privacy Policy</a></li>
+            <li class="nav-item"> <a class="nav-link text-white" href="#">Terms & Conditions</a></li>
+
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md mb-3 mb-md-0">
+          <p class="text-3 text-white mb-3">Follow Us</p>
+          <ul class="social-icons ">
+            <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-icons-google"><a data-toggle="tooltip" href="http://www.google.com/" target="_blank" title="Google"><i class="fab fa-google"></i></a></li>
+            <li class="social-icons-linkedin"><a data-toggle="tooltip" href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright pt-2 pt-lg-2 mt-2">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-center  mt-2 mb-lg-0">Copyright &copy; 2020 . All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>  
+<script src="js/theme.js"></script>
+
+<script>
+  $(document).ready(function(){
+
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var opacity;
+
+    $(".next").click(function(){
+
+      current_fs = $(this).parent();
+      next_fs = $(this).parent().next();
+
+//Add Class Active
+      $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+//show the next fieldset
+      next_fs.show();
+//hide the current fieldset with style
+      current_fs.animate({opacity: 0}, {
+        step: function(now) {
+// for making fielset appear animation
+          opacity = 1 - now;
+
+          current_fs.css({
+            'display': 'none',
+            'position': 'relative'
+          });
+          next_fs.css({'opacity': opacity});
+        },
+        duration: 600
+      });
+    });
+
+    $(".previous").click(function(){
+
+      current_fs = $(this).parent();
+      previous_fs = $(this).parent().prev();
+
+//Remove class active
+      $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+//show the previous fieldset
+      previous_fs.show();
+
+//hide the current fieldset with style
+      current_fs.animate({opacity: 0}, {
+        step: function(now) {
+// for making fielset appear animation
+          opacity = 1 - now;
+
+          current_fs.css({
+            'display': 'none',
+            'position': 'relative'
+          });
+          previous_fs.css({'opacity': opacity});
+        },
+        duration: 600
+      });
+    });
+
+    $('.radio-group .radio').click(function(){
+      $(this).parent().find('.radio').removeClass('selected');
+      $(this).addClass('selected');
+    });
+
+    $(".submit").click(function(){
+      return false;
+    })
+
+  });
+</script>
+</body>
+</html>

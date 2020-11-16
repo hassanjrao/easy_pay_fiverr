@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Easy Pay</title>
+		<link rel="icon" href="../images/login.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/icons.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/plugins/scroll-bar/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="assets/plugins/toggle-menu/sidemenu.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body class="app ">
+		<div id="app">
+			<div class="main-wrapper" >
+				<nav class="navbar navbar-expand-lg main-navbar">
+					<form class="form-inline mr-auto">
+						<ul class="navbar-nav">
+							<li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fa fa-navicon"></i></a></li>
+						</ul>
+
+					</form>
+					<ul class="navbar-nav navbar-right ml-auto">
+
+						<li class="dropdown dropdown-list-toggle d-none d-lg-block"><a href="#" data-toggle="dropdown" class="nav-link  nav-link-lg"><i class="fa fa-bell-o"></i>
+						</a>
+							<span class="pulse bg-primary"></span>
+							<div class="dropdown-menu dropdown-list dropdown-menu-right">
+								<div class="dropdown-header text-center text-dark">Notifications
+
+								</div>
+								<div class="dropdown-list-content">
+									<a href="#" class="dropdown-item dropdown-item-unread">
+										<div class="time text-left">Today</div>
+										<img alt="image" src="assets/img/avatar/avatar-1.jpeg" class="rounded-circle dropdown-item-img">
+										<div class="dropdown-item-desc">
+											<div class="dropdownmsg d-flex">
+												<div class="">
+													<b class="text-dark " style="font-size: 20px">Stewart Ball</b>
+
+												</div>
+
+											</div>
+
+										</div>
+										<p class="mt-2 text-left">Your template awesome</p>
+									</a>
+									<a href="#" class="dropdown-item dropdown-item-unread">
+										<div class="time text-left">Today</div>
+										<img alt="image" src="assets/img/avatar/avatar-1.jpeg" class="rounded-circle dropdown-item-img">
+										<div class="dropdown-item-desc">
+											<div class="dropdownmsg d-flex">
+												<div class="">
+													<b class="text-dark " style="font-size: 20px">Stewart Ball</b>
+
+												</div>
+
+											</div>
+
+										</div>
+										<p class="mt-3 text-left">Your template awesome</p>
+									</a>
+									<a href="#" class="dropdown-item dropdown-item-unread">
+										<div class="time text-left">Today</div>
+										<img alt="image" src="assets/img/avatar/avatar-1.jpeg" class="rounded-circle dropdown-item-img">
+										<div class="dropdown-item-desc">
+											<div class="dropdownmsg d-flex">
+												<div class="">
+													<b class="text-dark " style="font-size: 20px">Stewart Ball</b>
+
+												</div>
+
+											</div>
+
+										</div>
+										<p class="mt-3 text-left">Your template awesome</p>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li style="    background: lightgray;
+    width: 1px;
+    height: 23px;
+    margin-top: 8px;
+    margin-right: 39px;
+    margin-left: 39px;">
+							<span></span>
+						</li>
+
+						<li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg">
+							<img src="assets/img/avatar/avatar-6.jpg" alt="profile-user" class="rounded-circle w-32">
+
+						</a>
+							<div class="dropdown-menu dropdown-menu-right">
+
+								<a href="profile.html" class="dropdown-item has-icon">
+									 Settings
+								</a>
+								<a href="#" class="dropdown-item has-icon">
+								 Logout
+								</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+
+				<aside class="app-sidebar">
+					<div class="app-sidebar__user">
+					    <div class="dropdown">
+							<a class="nav-link pl-2 pr-2 leading-none d-flex" data-toggle="dropdown" href="#">
+								<img alt="image" src="../images/footer_logo.png" class="  ">
+							</a>
+						</div>
+					</div>
+					<ul class="side-menu">
+
+						<li>
+							<a class="side-menu__item" href="dashboar.html"><i class="side-menu__icon mdi mdi-apps"></i><span class="side-menu__label">Dashboard</span></a>
+						</li>
+						<li>
+							<a class="side-menu__item" href="history.html"><i class="side-menu__icon fa fa-history"></i><span class="side-menu__label">History</span></a>
+						</li>
+						<li>
+							<a class="side-menu__item" href="setting.html"><i class="side-menu__icon fa fa-cog"></i><span class="side-menu__label">Setting</span></a>
+						</li>
+
+						
+					</ul>
+				</aside>
+
+				<div class="app-content">
+					<section class="section">
+
+
+						<div class="section-body">
+
+
+
+							<div class="row mt-1">
+								<div class="col-lg-12">
+									<div class="card mt-5">
+										<div class="card-header border-bottom-0">
+											<h3 class="text-dark font-weight-bold">Settings</h3>
+
+										</div>
+										<div class="card-body">
+											<ul class="nav nav-pills pb-3" id="myTab3" role="tablist">
+												<li class="nav-item">
+													<a class="nav-link active" id="home-tab3" data-toggle="tab" href="#home3" role="tab" aria-controls="home" >Profile</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" id="profile-tab3" data-toggle="tab" href="#profile3" role="tab" aria-controls="profile" >Mailbox</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" id="contact-tab3" data-toggle="tab" href="#contact3" role="tab" aria-controls="contact" >Service providers</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" id="contact-tab4" data-toggle="tab" href="#contact4" role="tab" aria-controls="payment" >Payment</a>
+												</li>
+											</ul>
+											<div class="tab-content  p-3" id="myTabContent3">
+												<div class="tab-pane fade show active p-0" id="home3" role="tabpanel" aria-labelledby="home-tab3">
+													<div class="row">
+														<div class="col-md-6 col-sm-12">
+															<form>
+																<div class="">
+																	<div class="form-group">
+																		<label for="name">Full Name</label>
+																		<input type="text" class="form-control" id="name" placeholder="Enter Full Name">
+																	</div>
+
+																	<div class="form-group">
+																		<label for="exampleInputEmail1">Email address</label>
+																		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+																	</div>
+																	<div class="form-group">
+																		<label for="mobile">Mobile</label>
+																		<input type="tel" class="form-control" id="mobile" placeholder="+000000000">
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleInputPassword1">Password</label>
+																		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+																	</div>
+
+																</div>
+																<button type="submit" class="btn btn-primary mt-1 mb-0">Save</button>
+															</form>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade p-0" id="profile3" role="tabpanel" aria-labelledby="profile-tab3">
+													<div class="row">
+														<div class="col-md-6 col-sm-12">
+															<form>
+																<div class="row mb-5">
+																	<div class="col-3">
+																		<img src="../images/14%20(5).png" alt="">
+																		<p class="text-primary">Remove</p>
+
+																	</div>
+																	<div class="col-3">
+																		<img src="../images/14%20(2).png" alt="">
+																		<p class="text-primary">Remove</p>
+
+																	</div>
+																	<div class="col-3">
+																		<img src="../images/14%20(6).png" alt="">
+																		<p class="text-primary">Remove</p>
+
+																	</div>
+																	<div class="col-3">
+																		<img src="../images/14%20(3).png" alt="">
+																		<p class="text-primary">Remove</p>
+
+																	</div>
+																</div>
+
+																<button type="submit" class="btn btn-primary mt-1 mb-0">Save</button>
+															</form>
+														</div>
+													</div>												</div>
+												<div class="tab-pane fade p-0" id="contact3" role="tabpanel" aria-labelledby="contact-tab3">
+													<div class="row">
+														<div class="col-sm-12 col-lg-4 col-md-4 ">
+															<div class="card">
+																<div class="card-body p-3 text-center">
+																	<img src="../images/14%20(5).png" alt="">
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-12 col-lg-4 col-md-4 ">
+															<div class="card">
+																<div class="card-body p-3 text-center">
+																	<img src="../images/14%20(4).png" alt="">
+																</div>
+															</div>
+														</div>
+
+
+
+													</div>
+													<button type="submit" class="btn btn-primary mt-1 mb-0">Save</button>
+
+												</div>
+												<div class="tab-pane fade p-0" id="contact4" role="tabpanel" aria-labelledby="contact-tab3">
+													<div class="row">
+														<div class="col-md-6 col-sm-12">
+															<form>
+																<div class="row mb-5">
+																	<div class="col-3">
+																		<img src="../images/14%20(5).png" alt="">
+																		<p class="text-primary">Remove</p>
+
+																	</div>
+																	<div class="col-3">
+																		<img src="../images/14%20(2).png" alt="">
+																		<p class="text-primary">Remove</p>
+
+																	</div>
+																	<div class="col-3">
+																		<img src="../images/14%20(6).png" alt="">
+																		<p class="text-primary">Remove</p>
+
+																	</div>
+																	<div class="col-3">
+																		<img src="../images/14%20(3).png" alt="">
+																		<p class="text-primary">Remove</p>
+
+																	</div>
+																</div>
+
+																<button type="submit" class="btn btn-primary mt-1 mb-0">Add New</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+
+					</section>
+				</div>
+
+
+
+			</div>
+		</div>
+
+		<!--Jquery.min js-->
+		<script src="assets/js/jquery.min.js"></script>
+
+		<!--popper js-->
+		<script src="assets/js/popper.js"></script>
+
+		<!--Tooltip js-->
+		<script src="assets/js/tooltip.js"></script>
+
+		<!--Bootstrap.min js-->
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!--Jquery.nicescroll.min js-->
+		<script src="assets/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+
+		<!--Scroll-up-bar.min js-->
+		<script src="assets/plugins/scroll-up-bar/dist/scroll-up-bar.min.js"></script>
+
+		<!--Sidemenu js-->
+		<script src="assets/plugins/toggle-menu/sidemenu.js"></script>
+
+		<!--mCustomScrollbar js-->
+		<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!--Jquery.knob js-->
+		<script src="assets/plugins/othercharts/jquery.knob.js"></script>
+
+		<!--Jquery.sparkline.min js-->
+		<script src="assets/js/othercharts.js"></script>
+
+		<!--Othercharts js-->
+		<script src="assets/plugins/othercharts/jquery.knob.js"></script>
+		<script src="assets/plugins/othercharts/jquery.sparkline.min.js"></script>
+
+		<!--Scripts js-->
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/dataclick.js"></script>
+		<script src="assets/js/apexcharts.js"></script>
+
+	</body>
+</html>
