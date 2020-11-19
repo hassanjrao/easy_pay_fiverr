@@ -428,7 +428,7 @@
 }
 .slide-menu a.active{
 	color: #920b7f;
-	background:rgb(251, 247, 251,0.9);
+	background:rgba(251, 247, 251, 0.9);
 }
 .slide-item.active, .slide-item:hover, .slide-item:focus {
 	text-decoration: none;
@@ -438,7 +438,7 @@
 	text-decoration: none;
 }
 .slide-item a:before{
-	content="\f068";
+	content:"\f068";
 }
 .side-menu .side-menu__icon {
 	color: #ffffff;
@@ -467,7 +467,7 @@
 
 .slide.is-expanded .slide-menu li a:hover {
 	color: #920b7f;
-	background: rgb(251, 247, 251,0.9);
+	background: rgba(251, 247, 251,0.9);
 }
 .slide.is-expanded .slide-menu {
 	max-height: 100vh;
@@ -617,7 +617,7 @@
 		padding: 10px 0;
 		margin:0 auto;
 		text-align:center;
-		border-top: 1px solid rgb(145, 25, 132,.051);
+		border-top: 1px solid rgba(145, 25, 132, 0.051);
 	}
 	.app.sidebar-mini.sidenav-toggled .side-menu_label{
 		display:block;

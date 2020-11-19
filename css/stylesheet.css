@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
- 
+	
 =================================================
   Table of Contents
 =================================================
@@ -2853,12 +2853,46 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .ui-menu .ui-menu-divider {
   display: none;
 }
+.mail{
+  border-radius: 50%;
+  box-shadow: 1px 1px 12px;
+  height: 71px;
+  width: 71px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 25px;
+}
+.mail img.tick{
+  display: none;
+}
+.active img.tick{
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: -11px;
+  width: 25px;
+  height: 25px;
+}
 .mail img{
-  padding: 47px;
-  border-radius: 30%;
-  width: 150px;
-  height: 150px;
-  box-shadow: 1px 1px 12px
+
+  width: auto;
+  height: auto;
+
+}
+.profile{
+  position: relative;
+}
+.profile img.corr{
+  display: none;
+}
+.active img.corr{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
 }
 .mr-7{
   margin-right: 160px;
