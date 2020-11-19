@@ -493,6 +493,7 @@ hr {
 #header {
   background: #fff;
   /*border-bottom: 1px solid #efefef;*/
+height: 80px;
 }
 #header .navbar {
   padding: 0px;
